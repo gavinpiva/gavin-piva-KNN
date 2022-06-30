@@ -26,7 +26,7 @@ def pre_processing(data):
         data = standardize(data, column)
         
     return data    
-#The dode above was given, the KNN is original
+#The code above was given, the KNN is original
 class KNN:
     def __init__(self, k=5, group=None):
         self.k = k
