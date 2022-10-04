@@ -1,6 +1,7 @@
 KNN/GBP
--------
 
+-------
+Majority of this code was written in conjunction with Proffesor Jingsai Liang. 
 
 This contains a KNN based model that uses demographics and general information of people from two csv files. 
 Each csv file is a train and a test file. 
@@ -8,7 +9,7 @@ Each csv file is a train and a test file.
 [data_test.csv](https://github.com/gavinpiva/gavin-piva-KNN/files/9023043/data_test.csv)
 [data_train.csv](https://github.com/gavinpiva/gavin-piva-KNN/files/9023046/data_train.csv)
 
-Based on the categorical variable you set this is able to a percentage of individuals in each group that make above or below 50 thousand dollars a year.
+Based on the categorical variable you set this is able to determain a percentage of individuals in each group that make above or below 50 thousand dollars a year.
 Here is what each result looks like:
 
 ![result](https://user-images.githubusercontent.com/65461919/176764967-852e760d-c02e-493c-af19-eebbb3bc0ab3.png)
