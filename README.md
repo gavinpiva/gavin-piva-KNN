@@ -1,4 +1,53 @@
-KNN/GBP
+# K-Nearest Neighbors (KNN) Model
+## Introduction
+
+This KNN model is designed to predict the income of individuals based on demographic data, such as age, education, and occupation, among others. The model uses a supervised learning approach to classify the individuals into two categories - "less than or equal to 50K" and "greater than 50K" based on the training data.
+
+## Prerequisites
+
+This KNN model requires the following dependencies:
+
+numpy: For scientific computing with Python.
+
+matplotlib: For creating static, animated, and interactive visualizations in Python.
+
+pandas: For data manipulation and analysis.
+
+argparse: For parsing command-line arguments.
+
+## Preprocessing
+
+Before training the model, the data is preprocessed by performing the following steps:
+
+One-hot encoding: Categorical features are converted to numerical features using one-hot encoding.
+
+Standardization: Continuous features are standardized.
+
+## Model
+
+The KNN model is a distance-based algorithm. For each test sample, the KNN algorithm calculates the distance to each training sample and selects the K nearest neighbors. The model then predicts the class of the test sample by taking the majority vote of the K neighbors.
+
+## Usage
+
+The KNN model can be run from the command line with the following arguments:
+
+-k: The number of neighbors. Default value is 5.
+-group: The name of the group to filter the testing data. Default value is None.
+Examples: 
+python KNN.py 
+
+python KNN.py -k 5 -group sex_Male
+
+python KNN.py -k 5 -group sex_Female
+
+python KNN.py -k 5 -group race_White
+
+python KNN.py -k 5 -group race_Black
+## Outputs
+
+The output of the KNN model is the accuracy of the prediction on the testing set. If the -group argument is provided, the accuracy will be calculated only on the samples that belong to that group.
+
+If no -group argument is provided, the total number of sample size in training set will be displayed.
 
 -------
 Majority of this code was written in conjunction with Proffesor Jingsai Liang. 
@@ -14,7 +63,7 @@ Here is what each result looks like:
 
 ![result](https://user-images.githubusercontent.com/65461919/176764967-852e760d-c02e-493c-af19-eebbb3bc0ab3.png)
 
-# Things to keep in mind
+## Things to keep in mind
 What is the prediction of accuracy of your mode on male and female respectively?
 Which group of people has higher prediction accuracy? Why?
 
